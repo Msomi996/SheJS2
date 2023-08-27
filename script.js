@@ -25,3 +25,11 @@ let province = prompt("Which province are you from?")
 if (language === "Zulu" && province === "Kwazulu-natal") {
     alert("Sawubona.")
 }
+function greetUser() {
+    let language = prompt("which language do you speak?");
+    if (language === "Zulu") {
+        elert ("Sawubona.");
+    } else {
+        elert("Hello")
+    }
+}
