@@ -4,14 +4,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="homework-1.css">
     <style>
-
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #1a64d6;
+            font-size: 36px;
+            margin-bottom: .25em;
+        }
+        
+        h2 {
+            font-size: 36px;
+            font-weight: 100;
+            margin: 0;
+        }
+        
+        h3 {
+            font-size: 18px;
+        }
+        
+        ul {
+            display: block;
+            margin: 16px;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+            padding: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+            transition: all 200ms ease-in-out;
+        }
+        
+        li:hover {
+            background-color: #fff8ec;
+            border-radius: 5px;
+        }
+        
+        p {
+            font-family: monospace;
+            font-size: 16px;
+            opacity: .7;
+        }
+        
+        button {
+            color: white;
+            background-color: #1a64d6;
+            font-size: 16px;
+            padding: 16px 24px;
+            border: none;
+            border-radius: 30px;
+            transition: all 300ms ease-in-out;
+        
+        }
+        
+        button:hover {
+            color: #1a64d6;
+            background-color: white;
+            border: 1px solid #1a64d6;
+        }          
     </style>
 </head>
 <body>
+    <h1>🌤
+        <br>
+        Currently 16° in Sandton
+    </h1>
+    <h2>
+        8° / <strong>14°</strong>
+    </h2>
+    <ul>
+        <li>
+            <h3>
+                🌧Tomorrow
+            </h3>
+            <p>
+                9° / <strong>11°</strong>
+            </p>
+        </li>
+        <li>
+            <h3>
+                🌥 Saturday
+            </h3>
+            <p>
+                7° / <strong>11°</strong>
+            </p>
+        </li>
+        <li>
+            <h3>
+                ☀️ Sunday
+            </h3> 
+            <p>
+                13° / <strong>17°</strong>
+            </p>
+        </li>
+    </ul>
+    <button>
+        Change city
+    </button>
+    <p>
+        Coded by Nonhle Msomi
+    </p> 
+    
     <script>
-        
+        function changeCity() {
+            let city = prompt("What city do you live in?");
+            let temperature = prompt("What temperature is it?");
+            let heading = document.querySelector("h1");
+            if (temperature < 0) {
+              heading.innerHTML =
+                "☹️<br />Currently " + temperature + "°C in " + city;
+            } else {
+              heading.innerHTML =
+                "😄<br />Currently " + temperature + "°C in " + city;
+            }
+          }
+    
+          let changeButton = document.querySelector("button");
+          changeButton.addEventListener("click", changeCity);
     </script>
 </body>
 </html>
