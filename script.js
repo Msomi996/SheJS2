@@ -14,3 +14,14 @@ if(languageSpoken === "English") {
 if(languageSpoken !== "Zulu") {
     alert("Good day");
 }
+if(languageSpoken !== "Xhosa") {
+    alert("Molo");
+} else {
+    alert ("Hello")
+}
+let language = prompt("Which language do you speak?");
+let province = prompt("Which province are you from?")
+
+if (language === "Zulu" && province === "Kwazulu-natal") {
+    alert("Sawubona.")
+}
