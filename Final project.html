@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durban City</title>
+    <link rel="stylesheet" href="finalp.css">
+    <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #007acc; /* Blue color for the header */
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Style each section */
+section {
+    padding: 100px;
+    text-align: center;
+}
+
+#home {
+    background-image: url('durban-beach.jpg'); /* Add a background image */
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+}
+
+#about {
+    background-color: #f0f0f0;
+}
+
+#attractions {
+    background-color: #ddd;
+}
+
+#contact {
+    background-color: #f0f0f0;
+}
+
+/* Add animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s;
+}
+
+/* Additional styling can be added as needed */
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Durban</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Durban</h1>
+        <img src="waves.gif" alt="Waves Animation">
+        <p>Experience the beauty of our city.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Durban</h2>
+        <img src="https://img.freepik.com/premium-vector/big-ocean-wave-with-tropical-island-flat-illustration_1284-53989.jpg?w=360" alt="About Durban Animation">
+        <p>Your introduction to the city...</p>
+    </section>
+
+    <section id="attractions">
+        <h2>Attractions</h2>
+        <img src="attractions-animation.gif" alt="Attractions Animation">
+        <p>Explore Durban's top attractions...</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us...</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Durban City</p>
+    </footer>
+
+    <script src="finalp.js"></script>
+</body>
+</html>

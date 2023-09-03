@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durban Holdings</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style each section */
+section {
+    padding: 100px;
+    text-align: center;
+}
+
+#hero {
+    background-image: url('durban-hero.jpg');
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f99d1c;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffbb45;
+}
+
+/* Add styles for other sections as needed */
+
+/* Additional styling can be added as needed */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Welcome to Durban Holdings</h1>
+        <p>Your partner in excellence.</p>
+        <a href="#contact" class="cta-button">Contact Us</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a dynamic company...</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Discover our wide range of services...</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Explore our successful projects...</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with our team...</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Durban Holdings</p>
+    </footer>
+
+    <script> 
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+    </script>
+</body>
+</html>
