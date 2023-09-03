@@ -3,126 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Durban City</title>
-    <link rel="stylesheet" href="finalp.css">
+    <title>DURBAN</title>
     <style>
-        /* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        body {
+            background-color: rgb(197, 227, 239);
+        }
+      h1 {
+        text-align: center;
+        color: #7d51e8;
+      }
 
-/* Basic styling */
-body {
-    font-family: Arial, sans-serif;
-}
+      h2 {
+        text-align: center;
+        border: 1px solid #7d51e8;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
 
-header {
-    background-color: #007acc; /* Blue color for the header */
-    color: white;
-    padding: 10px 0;
-}
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+      }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #7d51e8;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-}
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
 
-/* Style each section */
-section {
-    padding: 100px;
-    text-align: center;
-}
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
 
-#home {
-    background-image: url('durban-beach.jpg'); /* Add a background image */
-    background-size: cover;
-    color: white;
-    text-shadow: 2px 2px 4px #000;
-}
+      .learn-more {
+        color: #7d51e8;
+        text-decoration: none;
+        font-size: 12px;
+      }
 
-#about {
-    background-color: #f0f0f0;
-}
+      .learn-more:hover {
+        text-decoration: underline;
+      }
 
-#attractions {
-    background-color: #ddd;
-}
-
-#contact {
-    background-color: #f0f0f0;
-}
-
-/* Add animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.fade-in {
-    animation: fadeIn 1.5s;
-}
-
-/* Additional styling can be added as needed */
-
+      .footer {
+        text-align: center;
+      }
     </style>
-    
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Durban</a></li>
-                <li><a href="#attractions">Attractions</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <h1>
+          DURBAN
+        </h1>
+        <h2>
+          Welcome to the fun world!
+        </h2>
+        <img
+          src="https://modernclassroom.co.za/wp-content/uploads/2021/02/Top-20-Schools-in-Kwazulu-Natal-South-Africa.jpg"
+          alt="Durban"
+        />
 
-    <section id="home">
-        <h1>Welcome to Durban</h1>
-        <img src="waves.gif" alt="Waves Animation">
-        <p>Experience the beauty of our city.</p>
-    </section>
-
-    <section id="about">
-        <h2>About Durban</h2>
-        <img src="https://img.freepik.com/premium-vector/big-ocean-wave-with-tropical-island-flat-illustration_1284-53989.jpg?w=360" alt="About Durban Animation">
-        <p>Your introduction to the city...</p>
-    </section>
-
-    <section id="attractions">
-        <h2>Attractions</h2>
-        <img src="attractions-animation.gif" alt="Attractions Animation">
-        <p>Explore Durban's top attractions...</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us...</p>
-    </section>
+        <p>
+            Durban, a coastal city in eastern South Africa’s KwaZulu-Natal province, is known for its African, 
+            Indian and colonial influences. Refurbished for soccer’s 2010 World Cup, the seafront promenade 
+            runs from uShaka Marine World, a huge theme park with an aquarium, to the futuristic Moses Mabhida Stadium. 
+            The Durban Botanical Gardens showcases African plant species
+          </p>
+          <a
+        href="https://en.wikipedia.org/wiki/Durban"
+        target="_blank"
+        class="learn-more"
+      >
+      Learn more on Wikipedia
+      </a>
+      <button class="Visit-button">
+        👉 Visit Durban
+      </button>
+      <p class="footer">
+        This page was built by
+        <a href="https://www.shecodesfoundation.org/candidates/nonhle-msomi-south-african-df56b4d0-5f9a-4823-8399-fa3e1f25f41c" target="_blank">
+          Nonhle Msomi
+        </a>
+      </p>
+    </div>
+    <script>
+        function Visit() {
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email address?");
+            let emoji = prompt("What is your favorite Hobby?");
     
-    <footer>
-        <p>&copy; 2023 Durban City</p>
-    </footer>
-
-    <script src="finalp.js"></script>
+            alert(
+              "Thank you, " +
+                name +
+                "! We'll be in touch by email, meanwhile enjoy reading about Durban! " +
+                emoji
+            );
+          }
+    
+          let VisitButton = document.querySelector(".Visit-button");
+          VisitButton.addEventListener("click", Visit);
+    </script>
 </body>
 </html>
